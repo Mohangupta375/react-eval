@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './todobackground.jpg';
 import './App.css';
 import { TodoList } from './TodoList';
 
@@ -38,19 +38,26 @@ class App extends Component {
           alignItems: 'center',
           flexDirection: 'column',
 		  backgroundColor:'#FFFFFF',
+		  backgroundImage:"url("+ logo +")",
+		  backgroundSize:'cover',
+		  backgroundPosition:'center'
         }}
       >
 		<div 
 			style={{
-				backgroundColor:'blue'				
+				backgroundColor:'#99ccff',
+				border:'solid 8px #2c3033',
+				borderRadius: '20px',
+				boxShadow: '10px 5px 5px grey'
 			}}
 		>
 			<div 
 				style={{
 					borderStyle:'solid',
-					padding:'10px',
-					backgroundColor: 'blue',
-					postision:'absolute'
+					padding:'15px',
+					backgroundColor: '#33cccc',
+					postision:'absolute',
+					borderRadius:'10px 10px 0 0px'
 				
 				}}
 		
@@ -61,12 +68,19 @@ class App extends Component {
 					<button type="submit">Add</button>
 				</form>	
 			</div>
+			<div
+				style={{
+					borderStyle:'solid',
+					backgroundColor:'#99ccff'
+				}}
+			>
 			<TodoList todoItems={todoItems} />
+			</div>
 			<div 
 				style={{
 					borderStyle:'solid',
-					padding:'10px',
-					backgroundColor: 'blue'
+					padding:'15px',
+					backgroundColor: '#33cccc'
 				
 				}}
 		
@@ -79,8 +93,8 @@ class App extends Component {
 			<div 
 				style={{
 					borderStyle:'solid',
-					padding:'10px',
-					backgroundColor: 'blue'
+					padding:'15px',
+					backgroundColor: '#33cccc'
 				
 				}}
 		
@@ -93,8 +107,9 @@ class App extends Component {
 			<div 
 				style={{
 					borderStyle:'solid',
-					padding:'10px',
-					backgroundColor: 'blue'
+					padding:'15px',
+					borderRadius:'0px 0px 10px 10px ',
+					backgroundColor: '#33cccc'
 				
 				}}
 		
