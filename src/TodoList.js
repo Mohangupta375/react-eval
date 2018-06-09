@@ -1,10 +1,12 @@
 import React from 'react';
 import { Todo } from './Todo';
 
+
 export const TodoList = ({ todoItems }) => (
   <div
-    style={{ display: 'flex', flexDirection: 'column', marginBottom: '10px' }}
+    style={{ display: 'flex', flexDirection: 'column', marginBottom:'10px', textAlign:'center'  }}
   >
-    {todoItems.map((todo, index) => <Todo key={index} title={todo} />)}
+    {todoItems.map((todo, index) => <Todo key={index}  title={todo} />)}
+	
   </div>
 );
